@@ -5,7 +5,6 @@ $colors = [
     "bg-danger",
     "bg-warning",
     "bg-info",
-    "bg-light",
     "bg-dark",
 ];
 
@@ -102,7 +101,7 @@ $arrayUsers = [
             'sha256' => 'ebf67bfd5e848ed77cea156051605fa771b84ad6ca0f7b3e6f76b35ddcd39e06',
         ],
         'dob' => [
-            'date' => '1990-12-18T21:11:48.817Z',
+            'date' => '2007-12-18T21:11:48.817Z',
             'age' => 32,
         ],
         'registered' => [

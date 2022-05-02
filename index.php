@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="row g-3">
-            <?php foreach ($arrayUsers as $user) :
+            <?php foreach ($arrayUsers as $key => $user) :
                 shuffle($colors);
             ?>
                 <div class="col-lg-3 col-md-6 col-12">
@@ -22,10 +22,12 @@
                                             } else {
                                                 echo 'border-primary';
                                             } ?>">
-                        <img src="<?= $user['picture']['medium'] ?>" class="card-img-top" alt="<?= $user['name']['first'] ?> <?= $user['name']['last'] ?>">
+                        <a href="<?= $user['picture']['large'] ?>" target="_blank">
+                            <img src="<?= $user['picture']['medium'] ?>" class="card-img-top" alt="<?= $user['name']['first'] ?> <?= $user['name']['last'] ?>">
+                        </a>
                         <div class="card-body">
                             <h5 class="card-title">
-                                <?= $user['name']['first'] ?> <?= $user['name']['last'] ?>
+                                <a href="profil.php?id=<?= $key ?>"><?= $user['name']['first'] ?> <?= $user['name']['last'] ?></a>
                             </h5>
                             <div>
                                 <div>
